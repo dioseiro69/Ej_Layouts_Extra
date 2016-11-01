@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.alejandro.ej_layouts_extra.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Título centrado"
+        android:id="@+id/textViewTitulo"
+        android:layout_alignParentTop="true"
+        android:background="#0033ff"
+        android:textAlignment="center"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textAlignment="center"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textViewTitulo"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:background="#1eff00" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageButton"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:background="@drawable/customer_person_people_man_you_1625"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre de usuario"
+        android:id="@+id/textViewNomUsuario"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="54dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="54dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripcion del estado del usuario
+        que ocupa 2-3 lineas"
+        android:id="@+id/textViewDescripcion"
+        android:layout_below="@+id/textViewNomUsuario"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="135dp"
+        android:layout_height="155dp"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:background="#00f4d3"
+        android:layout_alignLeft="@+id/textView2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:text="Ver Perfil"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="8dp"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/textView5"
+        android:background="@android:drawable/checkbox_off_background"
+        android:textAllCaps="false" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:text="Cargar Info"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="8dp"
+        android:layout_below="@+id/button"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignLeft="@+id/textView5"
+        android:background="@android:drawable/checkbox_off_background"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:text="Actualizar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="8dp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignRight="@+id/textView5"
+        android:background="@android:drawable/checkbox_off_background"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:background="#0033ff"
+        android:layout_alignLeft="@+id/textView5" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView2"
+        android:layout_toEndOf="@+id/textView5"
+        android:id="@+id/frameLayout"
+        android:layout_toRightOf="@+id/textView5">
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="185dp"
+            android:id="@+id/textView7"
+            android:layout_gravity="center_horizontal|top"
+            android:background="#647900" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Localizame!"
+            android:id="@+id/button4"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:textSize="10sp"
+            android:textAllCaps="false"
+            android:layout_marginTop="5dp" />
+
+        <ImageButton
+            android:layout_marginTop="10dp"
+            android:layout_width="145dp"
+            android:layout_height="125dp"
+            android:id="@+id/imageButton2"
+            android:layout_gravity="center_horizontal|top"
+            android:src="@drawable/mapa" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Es  un  ejemplo  de  texto  largo  encapsulado  en  un"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:textSize="15dp"
+        android:textColor="#ff0000"
+        android:background="#647900"
+        android:layout_alignLeft="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:background="@color/abc_input_method_navigation_guard"
+        android:layout_alignBottom="@+id/frameLayout"
+        android:layout_alignEnd="@+id/frameLayout"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignRight="@+id/frameLayout" />
+
+</RelativeLayout>
